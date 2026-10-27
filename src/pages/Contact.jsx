@@ -306,7 +306,7 @@ export default function Contact() {
                   Or Reach Us Directly
                 </div>
                 <a
-                  href="https://wa.me/919335280514"
+                  href="https://wa.me/919598140898"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -330,7 +330,7 @@ export default function Contact() {
                   Chat on WhatsApp
                 </a>
                 <a
-                  href="tel:+919335280514"
+                  href="tel:+919598140898"
                   style={{
                     display: 'flex',
                     alignItems: 'center',
@@ -346,7 +346,7 @@ export default function Contact() {
                   }}
                 >
                   <span>📞</span>
-                  +91 93352 80514
+                  +91 95981 40898
                 </a>
               </div>
 

@@ -1023,7 +1023,7 @@ export default function Home() {
         alignItems: 'flex-end',
       }}>
         <a
-          href="tel:+919335280514"
+          href="tel:+919598140898"
           aria-label="Call us"
           style={{
             width: '48px', height: '48px',
@@ -1042,7 +1042,7 @@ export default function Home() {
           📞
         </a>
         <a
-          href="https://wa.me/919335280514"
+          href="https://wa.me/919598140898"
           aria-label="WhatsApp"
           target="_blank"
           rel="noopener noreferrer"
