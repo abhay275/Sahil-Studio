@@ -39,7 +39,7 @@ export default function CloudUploadWidget({
   resourceType  = 'auto',
 }) {
   const widgetRef = useRef(null);
-  const cloudName = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME;
+  const cloudName = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME || 'derowd0h';
 
   useEffect(() => {
     loadScript(CLOUDINARY_SCRIPT_URL).catch(console.error);

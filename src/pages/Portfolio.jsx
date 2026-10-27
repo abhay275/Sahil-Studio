@@ -2,19 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useInquiry } from '../context/InquiryContext';
 
-const FILTERS = ['All', 'Wedding', 'Pre-Wedding', 'Destination', 'Traditional'];
-
-const portfolioItems = [
-  { id: 1, title: 'Priya & Arjun', subtitle: 'A Jaipur Palace Wedding', tags: 'COUPLE · JAIPUR', category: 'Destination', img: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=700&q=80&fit=crop', tall: true },
-  { id: 2, title: 'The Engagement', subtitle: 'Delhi Engagement Session', tags: 'COUPLE · DELHI', category: 'Pre-Wedding', img: 'https://images.unsplash.com/photo-1591604021695-0c69b7c05981?w=700&q=80&fit=crop', tall: false },
-  { id: 3, title: 'The Bride', subtitle: 'Bridal Portrait Series', tags: 'BRIDAL · LUCKNOW', category: 'Wedding', img: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=700&q=80&fit=crop', tall: false },
-  { id: 4, title: 'Simran & Kabir', subtitle: 'A Goa Beach Wedding', tags: 'WEDDING · GOA', category: 'Destination', img: 'https://images.unsplash.com/photo-1511285560929-80b456503681?w=700&q=80&fit=crop', tall: true },
-  { id: 5, title: 'Mehendi Ceremony', subtitle: 'Traditional Rituals', tags: 'MEHENDI · AGRA', category: 'Traditional', img: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=700&q=80&fit=crop', tall: false },
-  { id: 6, title: 'Naina & Shiv', subtitle: 'Punjabi Wedding, Chandigarh', tags: 'WEDDING · CHANDIGARH', category: 'Wedding', img: 'https://images.unsplash.com/photo-1536657464919-892534f60d6e?w=700&q=80&fit=crop', tall: false },
-  { id: 7, title: 'Ananya & Rohit', subtitle: 'Delhi Ballroom Reception', tags: 'RECEPTION · DELHI', category: 'Wedding', img: 'https://images.unsplash.com/photo-1525772764200-be829a350797?w=700&q=80&fit=crop', tall: true },
-  { id: 8, title: 'Pre-Wedding in Udaipur', subtitle: 'Heritage Haveli Session', tags: 'PRE-WEDDING · UDAIPUR', category: 'Pre-Wedding', img: 'https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?w=700&q=80&fit=crop', tall: false },
-  { id: 9, title: 'The Sangeet', subtitle: 'Celebration of Dance', tags: 'SANGEET · MUMBAI', category: 'Traditional', img: 'https://images.unsplash.com/photo-1550005809-91ad75fb315f?w=700&q=80&fit=crop', tall: false },
-];
+import { FILTERS, portfolioItems } from '../data/portfolioData';
 
 export default function Portfolio() {
   const { openInquiry } = useInquiry();
@@ -95,7 +83,7 @@ export default function Portfolio() {
       <section style={{ padding: '48px var(--px) 120px' }}>
         <div style={{ maxWidth: 'var(--max-w)', margin: '0 auto' }}>
           <div className="grid-3" style={{ gap: '2px' }}>
-            {filtered.map(({ id, title, subtitle, tags, img }) => (
+            {filtered.map(({ id, title, tags, img }) => (
               <Link
                 key={id}
                 to={`/portfolio/${id}`}

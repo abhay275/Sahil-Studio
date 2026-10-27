@@ -1,26 +1,27 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import Cta from '../components/Cta';
 import ImageReveal from '../components/ui/ImageReveal';
+import { portfolioItems } from '../data/portfolioData';
 
 const PortfolioStory = () => {
   const { id } = useParams();
+  const story = portfolioItems.find(p => String(p.id) === String(id)) || portfolioItems[0];
 
   return (
     <div className="main-content">
       {/* Cinematic Hero */}
       <section className="section no-pt" style={{ paddingBottom: '0' }}>
         <div style={{ position: 'relative', height: '100vh', width: '100%' }}>
-          <ImageReveal alt="Hero Story Image" style={{ height: '100%', width: '100%' }} />
+          <ImageReveal src={story.img} alt={story.title} style={{ height: '100%', width: '100%' }} />
           <div style={{
             position: 'absolute', top: 0, left: 0, width: '100%', height: '100%',
             background: 'linear-gradient(to top, rgba(10,10,10,0.9), transparent 60%)',
             display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center',
             paddingBottom: 'var(--space-12)', textAlign: 'center'
           }}>
-            <p className="metadata" style={{ marginBottom: 'var(--space-4)' }}>THE WEDDING OF</p>
-            <h1 className="display-xl" style={{ marginBottom: 'var(--space-4)' }}>Aarav & Ananya</h1>
-            <p className="metadata">UDAIPUR, INDIA · DECEMBER 2025</p>
+            <p className="metadata" style={{ marginBottom: 'var(--space-4)' }}>THE STORY OF</p>
+            <h1 className="display-xl" style={{ marginBottom: 'var(--space-4)' }}>{story.title}</h1>
+            <p className="metadata">{story.tags} · {story.subtitle}</p>
           </div>
         </div>
       </section>
@@ -36,28 +37,28 @@ const PortfolioStory = () => {
 
           <div style={{ marginBottom: 'var(--space-16)' }}>
             <p className="metadata text-center" style={{ marginBottom: 'var(--space-4)' }}>01 — ARRIVAL</p>
-            <ImageReveal alt="Arrival Image" style={{ height: '70vh', width: '100%' }} />
+            <ImageReveal src={story.img} alt={`${story.title} Arrival`} style={{ height: '70vh', width: '100%' }} />
           </div>
 
           <div style={{ marginBottom: 'var(--space-16)' }}>
             <p className="metadata text-center" style={{ marginBottom: 'var(--space-4)' }}>02 — HALDI & MEHENDI</p>
             <div className="grid grid-cols-2" style={{ gap: 'var(--space-4)' }}>
-              <ImageReveal alt="Haldi 1" style={{ height: '60vh' }} />
-              <ImageReveal alt="Haldi 2" style={{ height: '60vh' }} />
+              <ImageReveal src="https://res.cloudinary.com/derowd0h/image/upload/v1793094575/Mehendi.jpg" alt="Mehendi Ritual" style={{ height: '60vh' }} />
+              <ImageReveal src="https://res.cloudinary.com/derowd0h/image/upload/v1793089465/Mehendi.jpg" alt="Sangeet & Dance" style={{ height: '60vh' }} />
             </div>
           </div>
 
           <div style={{ marginBottom: 'var(--space-16)' }}>
-            <p className="metadata text-center" style={{ marginBottom: 'var(--space-4)' }}>03 — CEREMONY</p>
+            <p className="metadata text-center" style={{ marginBottom: 'var(--space-4)' }}>03 — CEREMONY & PORTRAITS</p>
             <div className="grid grid-cols-12" style={{ gap: 'var(--space-4)' }}>
               <div style={{ gridColumn: 'span 12' }}>
-                <ImageReveal alt="Ceremony Wide" style={{ height: '80vh' }} />
+                <ImageReveal src="https://res.cloudinary.com/derowd0h/image/upload/v1793091260/WhatsApp_Image_2026-10-27_at_14.23.28.jpg" alt="Ceremony Wide" style={{ height: '80vh' }} />
               </div>
               <div style={{ gridColumn: 'span 4' }}>
-                <ImageReveal alt="Ceremony Detail 1" style={{ height: '50vh' }} />
+                <ImageReveal src="https://res.cloudinary.com/derowd0h/image/upload/v1793095350/Ring.jpg" alt="Engagement Detail" style={{ height: '50vh' }} />
               </div>
               <div style={{ gridColumn: 'span 8' }}>
-                <ImageReveal alt="Ceremony Detail 2" style={{ height: '50vh' }} />
+                <ImageReveal src="https://res.cloudinary.com/derowd0h/image/upload/v1793093212/Bride.jpg" alt="Bridal Portrait" style={{ height: '50vh' }} />
               </div>
             </div>
           </div>

@@ -46,7 +46,7 @@ export default function MediaManager() {
 
   const visibleItems = getByFolder(activeFolder);
 
-  const cloudName   = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME;
+  const cloudName   = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME || 'derowd0h';
   const isConfigured = cloudName && cloudName !== 'your_cloud_name_here';
 
   // ─── Styles ────────────────────────────────────────────────────────────────

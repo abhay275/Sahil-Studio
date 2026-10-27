@@ -5,16 +5,16 @@ import { useMediaLibrary } from '../hooks/useMediaLibrary';
 import { buildImageUrl } from '../lib/cloudinary';
 
 // ─── Photography images via Unsplash ─────────────────────────────────────────
-const HERO_BG = 'https://images.unsplash.com/photo-1519741497674-611481863552?w=1800&q=80&fit=crop';
-const ABOUT_IMG = 'https://images.unsplash.com/photo-1511285560929-80b456503681?w=900&q=80&fit=crop';
-const PORTFOLIO_1 = 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=700&q=80&fit=crop';
-const PORTFOLIO_2 = 'https://images.unsplash.com/photo-1606800052052-a08af7148866?w=700&q=80&fit=crop';
-const PORTFOLIO_3 = 'https://images.unsplash.com/photo-1591604021695-0c69b7c05981?w=700&q=80&fit=crop';
-const FILM_THUMB = 'https://images.unsplash.com/photo-1512275539007-e7ebf7a22a9c?w=1200&q=80&fit=crop';
-const JOURNAL_1 = 'https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80&fit=crop';
-const JOURNAL_2 = 'https://images.unsplash.com/photo-1511285560929-80b456503681?w=600&q=80&fit=crop';
-const JOURNAL_3 = 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&q=80&fit=crop';
-const FINAL_BG = 'https://images.unsplash.com/photo-1606800052052-a08af7148866?w=1800&q=80&fit=crop';
+const HERO_BG = 'https://res.cloudinary.com/derowd0h/image/upload/v1793091259/WhatsApp_Image_2026-10-27_at_14.17.01.jpg';
+const ABOUT_IMG = 'https://res.cloudinary.com/derowd0h/image/upload/v1793092633/Naina-Kabir.jpg';
+const PORTFOLIO_1 = 'https://res.cloudinary.com/derowd0h/image/upload/v1793091259/WhatsApp_Image_2026-10-27_at_14.17.01.jpg';
+const PORTFOLIO_2 = 'https://res.cloudinary.com/derowd0h/image/upload/v1793095350/Ring.jpg';
+const PORTFOLIO_3 = 'https://res.cloudinary.com/derowd0h/image/upload/v1793093212/Bride.jpg';
+const FILM_THUMB = 'https://res.cloudinary.com/derowd0h/image/upload/v1793092486/Harry-simran.jpg';
+const JOURNAL_1 = 'https://res.cloudinary.com/derowd0h/image/upload/v1793094575/Mehendi.jpg';
+const JOURNAL_2 = 'https://res.cloudinary.com/derowd0h/image/upload/v1793091259/WhatsApp_Image_2026-10-27_at_14.19.17.jpg';
+const JOURNAL_3 = 'https://res.cloudinary.com/derowd0h/image/upload/v1793089465/Mehendi.jpg';
+const FINAL_BG = 'https://res.cloudinary.com/derowd0h/image/upload/v1793091260/WhatsApp_Image_2026-10-27_at_14.23.28.jpg';
 
 const stats = [
   { num: '300+', label: 'Weddings Told' },

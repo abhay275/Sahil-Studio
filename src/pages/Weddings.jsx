@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useInquiry } from '../context/InquiryContext';
-import CloudImage from '../components/CloudImage';
 
-const HEADER_BG = 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=1800&q=80&fit=crop';
+const HEADER_BG = 'https://res.cloudinary.com/derowd0h/image/upload/v1793091259/WhatsApp_Image_2026-10-27_at_14.17.01.jpg';
 
 const weddings = [
   {
@@ -10,42 +9,63 @@ const weddings = [
     title: 'Priya & Arjun',
     subtitle: 'A Jaipur Palace Wedding',
     tags: 'WEDDING · JAIPUR',
-    img: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=700&q=80&fit=crop',
-  },
-  {
-    id: 2,
-    title: 'Simran & Kabir',
-    subtitle: 'A Goa Destination Wedding',
-    tags: 'DESTINATION · GOA',
-    img: 'https://images.unsplash.com/photo-1591604021695-0c69b7c05981?w=700&q=80&fit=crop',
-  },
-  {
-    id: 3,
-    title: 'Ananya & Rohit',
-    subtitle: 'A Delhi Ballroom Reception',
-    tags: 'WEDDING · DELHI',
-    img: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=700&q=80&fit=crop',
+    img: 'https://res.cloudinary.com/derowd0h/image/upload/v1793091259/WhatsApp_Image_2026-10-27_at_14.17.01.jpg',
   },
   {
     id: 4,
-    title: 'Meera & Dev',
-    subtitle: 'Heritage Haveli, Udaipur',
-    tags: 'DESTINATION · UDAIPUR',
-    img: 'https://images.unsplash.com/photo-1511285560929-80b456503681?w=700&q=80&fit=crop',
+    title: 'Naina & Kabir',
+    subtitle: 'A Goa Beach Wedding',
+    tags: 'DESTINATION · GOA',
+    img: 'https://res.cloudinary.com/derowd0h/image/upload/v1793092633/Naina-Kabir.jpg',
   },
   {
-    id: 5,
-    title: 'Riya & Aakash',
-    subtitle: 'A Mumbai Seaside Wedding',
-    tags: 'WEDDING · MUMBAI',
-    img: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=700&q=80&fit=crop',
+    id: 7,
+    title: 'Ananya & Rohit',
+    subtitle: 'Mountain Wedding, Rishikesh',
+    tags: 'WEDDING · RISHIKESH',
+    img: 'https://res.cloudinary.com/derowd0h/image/upload/v1793091260/WhatsApp_Image_2026-10-27_at_14.23.28.jpg',
   },
   {
     id: 6,
-    title: 'Naina & Shiv',
-    subtitle: 'Traditional Punjabi Ceremony',
-    tags: 'TRADITIONAL · CHANDIGARH',
-    img: 'https://images.unsplash.com/photo-1536657464919-892534f60d6e?w=700&q=80&fit=crop',
+    title: 'Hardeep & Simran',
+    subtitle: 'Punjabi Wedding, Chandigarh',
+    tags: 'WEDDING · CHANDIGARH',
+    img: 'https://res.cloudinary.com/derowd0h/image/upload/v1793092486/Harry-simran.jpg',
+  },
+  {
+    id: 3,
+    title: 'The Bride',
+    subtitle: 'Bridal Portrait Series',
+    tags: 'BRIDAL · LUCKNOW',
+    img: 'https://res.cloudinary.com/derowd0h/image/upload/v1793093212/Bride.jpg',
+  },
+  {
+    id: 8,
+    title: 'Pre-Wedding in Udaipur',
+    subtitle: 'Heritage Haveli Session',
+    tags: 'PRE-WEDDING · UDAIPUR',
+    img: 'https://res.cloudinary.com/derowd0h/image/upload/v1793091259/WhatsApp_Image_2026-10-27_at_14.19.17.jpg',
+  },
+  {
+    id: 5,
+    title: 'Mehendi Ceremony',
+    subtitle: 'Traditional Rituals',
+    tags: 'MEHENDI · AGRA',
+    img: 'https://res.cloudinary.com/derowd0h/image/upload/v1793094575/Mehendi.jpg',
+  },
+  {
+    id: 2,
+    title: 'The Engagement',
+    subtitle: 'Delhi Engagement Session',
+    tags: 'COUPLE · DELHI',
+    img: 'https://res.cloudinary.com/derowd0h/image/upload/v1793095350/Ring.jpg',
+  },
+  {
+    id: 9,
+    title: 'The Sangeet',
+    subtitle: 'Celebration of Dance',
+    tags: 'SANGEET · MUMBAI',
+    img: 'https://res.cloudinary.com/derowd0h/image/upload/v1793089465/Mehendi.jpg',
   },
 ];
 

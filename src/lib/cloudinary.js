@@ -4,7 +4,7 @@ import { Cloudinary } from '@cloudinary/url-gen';
 // Reads from .env — fill in VITE_CLOUDINARY_CLOUD_NAME in your .env file
 export const cld = new Cloudinary({
   cloud: {
-    cloudName: import.meta.env.VITE_CLOUDINARY_CLOUD_NAME || 'demo',
+    cloudName: import.meta.env.VITE_CLOUDINARY_CLOUD_NAME || 'derowd0h',
   },
   url: {
     secure: true,
@@ -13,7 +13,7 @@ export const cld = new Cloudinary({
 
 // Upload preset (set to "Unsigned" in Cloudinary dashboard)
 export const UPLOAD_PRESET =
-  import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET || 'ml_default';
+  import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET || 'sahil_studio';
 
 // ─── Folder structure ─────────────────────────────────────────────────────────
 export const FOLDERS = {
@@ -37,7 +37,7 @@ export function buildImageUrl(publicId, options = {}) {
     gravity = 'auto',
   } = options;
 
-  const cloudName = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME || 'demo';
+  const cloudName = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME || 'derowd0h';
   const base      = `https://res.cloudinary.com/${cloudName}/image/upload`;
 
   const transforms = [
@@ -58,7 +58,7 @@ export function buildImageUrl(publicId, options = {}) {
 // ─── Helper: build a Cloudinary video URL ────────────────────────────────────
 export function buildVideoUrl(publicId, options = {}) {
   const { quality = 'auto', format = 'auto' } = options;
-  const cloudName = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME || 'demo';
+  const cloudName = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME || 'derowd0h';
   const base      = `https://res.cloudinary.com/${cloudName}/video/upload`;
   const transforms = [`f_${format}`, `q_${quality}`].join(',');
   return `${base}/${transforms}/${publicId}`;
@@ -67,7 +67,7 @@ export function buildVideoUrl(publicId, options = {}) {
 // ─── Helper: build a video thumbnail URL ─────────────────────────────────────
 export function buildVideoThumbnailUrl(publicId, options = {}) {
   const { width = 800, height = 450 } = options;
-  const cloudName = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME || 'demo';
+  const cloudName = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME || 'derowd0h';
   const base      = `https://res.cloudinary.com/${cloudName}/video/upload`;
   const transforms = `w_${width},h_${height},c_fill,so_2,f_jpg,q_auto`;
   return `${base}/${transforms}/${publicId}`;
