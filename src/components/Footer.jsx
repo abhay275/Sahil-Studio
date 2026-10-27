@@ -138,8 +138,8 @@ export default function Footer() {
               <div style={{ fontSize: '12px', color: 'var(--gold)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '4px' }}>
                 WhatsApp
               </div>
-              <a href="https://wa.me/919598140898" style={{ fontSize: '16px', color: 'var(--text-cream-muted)', textDecoration: 'none' }}>
-                +91 95981 40898
+              <a href="https://wa.me/919335280514" style={{ fontSize: '16px', color: 'var(--text-cream-muted)', textDecoration: 'none' }}>
+                +91 93352 80514
               </a>
             </div>
             <div>
