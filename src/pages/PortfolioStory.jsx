@@ -28,7 +28,7 @@ const PortfolioStory = () => {
 
       <section className="section">
         <div className="container" style={{ maxWidth: '900px' }}>
-          
+
           <div className="text-center" style={{ marginBottom: 'var(--space-16)' }}>
             <h2 className="display" style={{ fontStyle: 'italic', color: 'var(--text-secondary)' }}>
               "The experience should make visitors imagine: 'I want my wedding to feel like this.'"
@@ -44,7 +44,7 @@ const PortfolioStory = () => {
             <p className="metadata text-center" style={{ marginBottom: 'var(--space-4)' }}>02 — HALDI & MEHENDI</p>
             <div className="grid grid-cols-2" style={{ gap: 'var(--space-4)' }}>
               <ImageReveal src="https://res.cloudinary.com/derowd0h/image/upload/v1793094575/Mehendi.jpg" alt="Mehendi Ritual" style={{ height: '60vh' }} />
-              <ImageReveal src="https://res.cloudinary.com/derowd0h/image/upload/v1793089465/Mehendi.jpg" alt="Sangeet & Dance" style={{ height: '60vh' }} />
+              <ImageReveal src="https://res.cloudinary.com/derowd0h/image/upload/v1793097237/sangeet.jpg" alt="Sangeet & Dance" style={{ height: '60vh' }} />
             </div>
           </div>
 
@@ -70,9 +70,9 @@ const PortfolioStory = () => {
             </h3>
             <p className="metadata">— AARAV & ANANYA</p>
           </div>
-          
+
           <div className="text-center">
-            <h2 className="display" style={{ marginBottom: 'var(--space-6)' }}>Every wedding has a story.<br/>Let's tell yours.</h2>
+            <h2 className="display" style={{ marginBottom: 'var(--space-6)' }}>Every wedding has a story.<br />Let's tell yours.</h2>
             <Link to="/contact" className="btn btn-primary" style={{ marginRight: '1rem' }}>BOOK YOUR DATE</Link>
             <Link to="/portfolio" className="btn btn-outline">BACK TO PORTFOLIO</Link>
           </div>

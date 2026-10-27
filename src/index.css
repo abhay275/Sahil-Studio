@@ -59,6 +59,9 @@
   --max-w: 1440px;
   --px: 80px;
   --nav-h: 70px;
+  --mobile-top-h: 58px;
+  --mobile-bottom-nav-h: 62px;
+  --floating-cta-bottom: 28px;
 }
 
 @media (max-width: 1200px) {
@@ -67,9 +70,11 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   :root {
     --px: 20px;
+    --nav-h: 58px;
+    --floating-cta-bottom: calc(var(--mobile-bottom-nav-h) + env(safe-area-inset-bottom, 0px) + 16px);
     --text-6xl: 48px;
     --text-5xl: 36px;
     --text-4xl: 30px;
@@ -81,6 +86,15 @@
     --s8: 40px;
     --s7: 32px;
     --s6: 24px;
+  }
+
+  /* Respect mobile bottom navigation and safe-area insets */
+  body {
+    padding-bottom: calc(var(--mobile-bottom-nav-h) + env(safe-area-inset-bottom, 0px));
+  }
+
+  footer {
+    padding-bottom: calc(32px + var(--mobile-bottom-nav-h) + env(safe-area-inset-bottom, 0px)) !important;
   }
 }
 

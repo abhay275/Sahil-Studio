@@ -65,7 +65,7 @@ const weddings = [
     title: 'The Sangeet',
     subtitle: 'Celebration of Dance',
     tags: 'SANGEET · MUMBAI',
-    img: 'https://res.cloudinary.com/derowd0h/image/upload/v1793089465/Mehendi.jpg',
+    img: 'https://res.cloudinary.com/derowd0h/image/upload/v1793097237/sangeet.jpg',
   },
 ];
 

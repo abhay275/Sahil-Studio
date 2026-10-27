@@ -1014,7 +1014,7 @@ export default function Home() {
       {/* Floating CTAs */}
       <div style={{
         position: 'fixed',
-        bottom: '28px',
+        bottom: 'var(--floating-cta-bottom, 28px)',
         right: '28px',
         zIndex: 200,
         display: 'flex',
